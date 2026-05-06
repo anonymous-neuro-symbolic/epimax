@@ -1,0 +1,17 @@
+# Experiment: Hierarchical Smoke Test
+experiment_name: "cifar100_v100_full_sweep"
+
+# Model settings
+model: "wide_resnet50_2"
+pretrained: true
+
+# Training hyperparameters (Optimized for 4GB VRAM)
+batch_size: 128          # Minimal batch size to avoid OOM
+epochs: 100              # Just enough to verify gradient flow
+lr: 0.0001
+weight_decay: 0.05
+
+# Loss parameters
+gamma: 2.0
+l1: 1.0                # Lambda for consistency
+l2: 1.0                # Lambda for necessity

@@ -1,0 +1,69 @@
+# =========================
+# Python & Environments
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+.env
+.pytest_cache/
+
+# =========================
+# Deep Learning & PyTorch
+# =========================
+# Ignore downloaded datasets
+data/
+*.h5
+*.lmdb
+
+# Ignore heavy model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Ignore training logs (TensorBoard, Weights & Biases)
+runs/
+tb_logs/
+wandb/
+
+# =========================
+# OS & System Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# LaTeX (If compiling locally)
+# =========================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# =========================
+# Compiled Packages & Binaries
+# =========================
+wheels/
+*.whl
+*.egg-info/
